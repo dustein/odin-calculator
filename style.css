@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-size: 16px;
+}
+
+#container {
+  display: grid;
+  width: 30rem;
+  background-color: rgb(207, 203, 203);
+  box-shadow: 3px 2px 8px gray;
+  margin: 2rem;
+  margin: auto;
+}
+
+.linhas {
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem 6rem;
+  font-size: 2rem;
+  width: 20rem;
+  column-gap: 5px;
+}
+
+.colunas {
+  border: solid;
+
+}
