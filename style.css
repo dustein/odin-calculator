@@ -5,27 +5,36 @@
 
 body {
   text-align: center;
-  font-size: 16px;
+  font-size: 26px;
 }
 
-#container {
-  display: grid;
-  width: 30rem;
-  background-color: rgb(207, 203, 203);
-  box-shadow: 3px 2px 8px gray;
-  margin: 2rem;
+.container {
+  width: 15rem;
   margin: auto;
+  display: grid;
+  justify-items: center;
+  box-shadow: 3px 2px 8px gray;
 }
 
-.linhas {
+#display {
+  background-color: rgb(245, 251, 222);
+  width: 100%;
+}
+
+#teclas {
+  width: 100%;
   display: grid;
-  grid-template-columns: 6rem 6rem 6rem 6rem;
-  font-size: 2rem;
-  width: 20rem;
-  column-gap: 5px;
+  justify-content:center;
+  background-color: rgb(92, 89, 89);
+}
+
+.keys-container {
+  display: grid;
+  grid-template-columns: 4rem 4rem 4rem 3rem;
+  column-gap: 2px;
+  row-gap: 2px;
 }
 
 .colunas {
-  border: solid;
-
+  background-color: azure;
 }
