@@ -15,7 +15,12 @@ function divide(num1, num2) {
   return num1 / num2;
 }
 
-function tecla(e) {
-  const teste = document.querySelector('data-key="1"')
-  consolelog(teste)
-}
+
+const teclas = Array.from(document.querySelectorAll('.teclas'));
+console.log(teclas)
+
+teclas.forEach(tecla => {
+  tecla.addEventListener('click', (e) => {
+    console.log("teste")
+  })
+})
