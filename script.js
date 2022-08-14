@@ -17,4 +17,5 @@
 
 
 const botoes = document.querySelectorAll('.tecla')
-console.log(botoes)
+console.log(botoes);
+

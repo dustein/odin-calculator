@@ -9,17 +9,10 @@ body {
 }
 
 .container {
-  text-align: center;
-  width: 200px;
+  width: 16rem;
   margin: auto;
   border: solid;
   box-shadow: 3px 2px 8px gray;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  min-height: 100vh;
-  grid-template-columns: repeat(5, 80px);
-  grid-template-rows: minmax(120px, auto) repeat(4, 100px);
 }
 
 .display {
@@ -29,12 +22,17 @@ body {
 
 .tecla {
   background-color: rgb(174, 174, 174);
+  width: 4rem;
 }
 .tecla:hover {
-  background-color: burlywood;
+  background-color: blueviolet;
 }
 
 .keys-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: 4px;
+  row-gap: 4px;
 }
 
 .colunas {
