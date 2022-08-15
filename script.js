@@ -16,11 +16,3 @@
 // }
 
 
-const botoes = document.querySelectorAll('.tecla')
-console.log(botoes);
-
-
-botoes.forEach(texto => {
-  console.log(botoes.outerText)
-})
-//botoes.outerText
