@@ -31,7 +31,7 @@ header {
   width: 300px;
   height: 300px;
   margin: auto;
-  border: 5px solid black;
+  border: 6px solid black;
   border-radius: 10px;
   box-shadow: 2px 2px 5px black;
   display: grid;
@@ -43,7 +43,9 @@ header {
   display: flex;
   align-items: center;
   justify-content:flex-end;
-  border-bottom: 3px solid rgb(69, 69, 69);
+  border: 2px solid rgb(69, 69, 69);
+  border-style: inset;
+  margin-bottom: 2px;
 }
 
 #numero {
@@ -67,7 +69,21 @@ header {
   justify-content: center;
 }
 
-.tecla:hover {
+.tecla-op {
+  background-color: #9e9e9c;
+  color: #0B0500;
+  font-weight: 900;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#igual {
+  background-color: #999981;
+}
+
+.tecla:hover, .tecla-op:hover {
   background-color: #FC5130;
   color: #0B0500;
 }
