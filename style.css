@@ -1,5 +1,49 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  color: white;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+  margin: 5px;
+}
+
+.calculadora {
+  background-color: rgb(57, 80, 73);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px black;
+  display: grid;
+  grid-template-rows: 2rem auto;
+}
+
+.display {
+  background-color: rgb(247, 199, 199);
+  text-align: right;
+}
+
+#numero {
+  padding: 2px 10px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.tecla {
+  background-color: rgb(2, 10, 7);
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
