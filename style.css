@@ -83,9 +83,10 @@ header {
   background-color: #999981;
 }
 
-.tecla:hover, .tecla-op:hover {
+.tecla:hover, .tecla-op:hover, #igual:hover {
   background-color: #FC5130;
   color: #0B0500;
+  cursor: pointer;  
 }
 
 footer {

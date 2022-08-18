@@ -2,19 +2,15 @@
 function soma(num1, num2) {
   return num1 + num2;
 }
-
 function subtrai(num1, num2) {
   return num1 - num2;
 }
-
 function multiplica(num1, num2) {
   return num1 * num2;
 }
-
 function divide(num1, num2) {
   return num1 / num2;
 }
-
 
 function operate(operator, num1, num2) {
   if(operator === 'soma') {
@@ -28,10 +24,8 @@ function operate(operator, num1, num2) {
   }
 }
 
-
-
 const display = document.querySelector('#numero');
-
+let guardaValor;
 //capturar os numerais pressionados
 let numero = ``;
 const pressKey = document.querySelectorAll('.tecla');
@@ -51,10 +45,25 @@ pressKeyOp.forEach(key => {
     if(key.dataset.operator === 'ce') {
       display.innerText = '';
     }
-    if(key.datase.operator === "sum") {
-      soma(num1, num2)
+    if(key.dataset.operator === "soma") {
+      guardaValor = Number(display.innerText);
+      display.innerText += '+' ;
+      console.log(operate("soma", guardaValor, 9))
     }
+    if(key.dataset.operator === "menos") {
+      guardaValor = Number(display.innerText);
+      display.innerText += '-' ;
+    }
+    if(key.dataset.operator === "multi") {
+      guardaValor = Number(display.innerText);
+      display.innerText += 'x' ;
+    }
+    if(key.dataset.operator === "divide") {
+      guardaValor = Number(display.innerText);
+      display.innerText += '/' ;
+      
+    }
+    
   })
 })
-
-console.log(operate("divide", 2, 4))
+console.log(operate("divide", guardaValor, 4))
