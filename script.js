@@ -25,7 +25,9 @@ function operate(operator, num1, num2) {
 }
 
 const display = document.querySelector('#numero');
+const memoria = document.querySelector('#memoria');
 let guardaValor;
+
 //capturar os numerais pressionados
 let numero = ``;
 const pressKey = document.querySelectorAll('.tecla');
@@ -47,7 +49,9 @@ pressKeyOp.forEach(key => {
     }
     if(key.dataset.operator === "soma") {
       guardaValor = Number(display.innerText);
-      display.innerText += '+' ;
+      memoria.innerText = guardaValor;
+      display.innerText = '+';
+      console.log("guardaValor: " + guardaValor)
       console.log(operate("soma", guardaValor, 9))
     }
     if(key.dataset.operator === "menos") {
