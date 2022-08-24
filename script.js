@@ -48,8 +48,8 @@ pressKeyOp.forEach(key => {
       display.innerText = '';
     }
     if(key.dataset.operator === "soma") {
-      guardaValor = Number(display.innerText);
-      memoria.innerText = guardaValor;
+      guardaValor = numero;
+      memoria.innerText += guardaValor;
       display.innerText = '+';
       console.log("guardaValor: " + guardaValor)
       console.log(operate("soma", guardaValor, 9))
